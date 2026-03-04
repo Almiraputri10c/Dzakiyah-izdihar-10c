@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <title>Kontak Kami</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 20px;
+        }
+
+        h1 {
+            text-align: center;
+            color: #333;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: auto;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 30px;
+        }
+
+        .info-toko, .form-kontak {
+            background-color: white;
+            padding: 25px;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+        }
+
+        .info-toko h2,
+        .form-kontak h2 {
+            margin-top: 0;
+            color: #444;
+        }
+
+        .info-toko p {
+            line-height: 1.6;
+        }
+
+        .form-kontak label {
+            display: block;
+            margin-top: 10px;
+            font-weight: bold;
+        }
+
+        .form-kontak input,
+        .form-kontak textarea {
+            width: 100%;
+            padding: 10px;
+            margin-top: 5px;
+            margin-bottom: 15px;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+        }
+
+        .form-kontak button {
+            background-color: #3498db;
+            color: white;
+            padding: 10px 18px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .form-kontak button:hover {
+            background-color: #2980b9;
+        }
+
+        @media (max-width: 768px) {
+            .container {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Hubungi Kami</h1>
+
+    <div class="container">
+
+        <!-- Informasi Toko -->
+        <div class="info-toko">
+            <h2>Alamat Toko</h2>
+            <p><strong>Nama Toko:</strong> Toko Buku Almira</p>
+            <p><strong>Alamat:</strong> Jl. Besuk,RT.11/RW04.Besuk, Sambungrejo,Kecamatan Sukodono,Kabupaten Sidoarjo,</p>
+            <p><strong>Telepon:</strong> +62 822 4169 6699</p>
+            <p><strong>Email:</strong> @pesantrenalkautsar.id</p>
+            <p><strong>Jam Operasional:</strong><br>
+               Senin - Sabtu : 08.00 - 17.00<br>
+               Minggu : Tutup
+            </p>
+        </div>
+
+        <!-- Form Kontak -->
+        <div class="form-kontak">
+            <h2>Form Kontak</h2>
+
+            <form action="#" method="post">
+
+                <label for="nama">Nama Lengkap</label>
+                <input type="text" id="nama" name="nama" required>
+
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="pesan">Pesan</label>
+                <textarea id="pesan" name="pesan" rows="5" required></textarea>
+
+                <button type="submit">Kirim Pesan</button>
+
+            </form>
+        </div>
+
+    </div>
+
+</body>
+</html>
